@@ -1,4 +1,7 @@
 Heart Disease Prediction
+
+
+
 Overview
 
 This project predicts the likelihood of a person having heart disease based on health-related attributes such as blood pressure, cholesterol, BMI, smoking habits, and lifestyle factors. It combines data analysis and machine learning to identify key risk factors and build an accurate predictive model.
