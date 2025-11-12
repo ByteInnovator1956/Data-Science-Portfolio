@@ -1,99 +1,71 @@
-Heart Disease Prediction
+MyNextMovie Recommender System
 Overview
 
-This project predicts the likelihood of a person having heart disease based on health-related attributes such as blood pressure, cholesterol, BMI, smoking habits, and lifestyle factors. It combines data analysis and machine learning to identify key risk factors and build an accurate predictive model.
+This project builds an intelligent movie recommendation system using data analysis and machine learning techniques. The system helps users discover new movies based on their previous preferences and the behavior of similar users.
 
-Role: Data Analyst / Machine Learning Practitioner
+Datasets
 
-Dataset
+movies.csv: Contains movie details such as ID, title, and genres.
 
-File: heartdisease_u5z_lx9fv.csv
-
-Key Columns:
-
-HeartDiseaseorAttack (target variable)
-
-HighBP, HighChol, BMI, Smoker, Diabetes
-
-Fruits, Veggies, HvyAlcoholConsump
-
-MentHlth, PhysHlth
-
-Sex, Age, Education, Income
+ratings.csv: Contains user ratings with fields like userId, movieId, rating, and timestamp.
 
 Tools & Libraries
 
 Python
 
-Pandas, NumPy: Data loading, cleaning, and transformation
+Pandas, NumPy: Data manipulation and cleaning
 
 Matplotlib, Seaborn: Visualization and exploratory data analysis
 
-Scikit-learn: Model building and evaluation (Logistic Regression, Decision Tree, Random Forest, SVM)
+Scikit-learn: Building and evaluating recommendation algorithms
 
 Workflow
 1. Data Loading & Cleaning
 
-Loaded CSV with proper encoding
+Imported and validated both datasets.
 
-Checked for missing values and duplicates
+Converted timestamps into human-readable format.
 
-Examined class imbalance in the target variable
+Checked for missing or duplicate values.
 
-Verified dataset columns
+Counted total unique users, movies, and ratings.
 
 2. Exploratory Data Analysis (EDA)
 
-Analyzed correlations between risk factors and heart disease
+Visualized rating distributions and top-rated movies.
 
-Visualized distributions of numeric features like BMI, Age, and Blood Pressure
+Identified popular genres and user rating patterns.
 
-Compared disease prevalence across genders, age groups, and income levels
-
-Identified class imbalance in the target variable
+Analyzed biases in rating behavior and user activity frequency.
 
 3. Feature Engineering
 
-Encoded categorical variables: Sex, Smoker, Diabetes
+Extracted and encoded movie genres into multiple categories.
 
-Normalized numeric features as needed
+Merged movie and rating data to create a comprehensive user–movie matrix.
 
-Created derived features combining lifestyle and health indicators
+4. Recommendation Techniques
 
-4. Model Building
+Popularity-Based: Suggested movies with the highest ratings or number of reviews.
 
-Split dataset into training and test sets
+Collaborative Filtering (Memory-Based): Recommended movies using user–user or item–item similarity (cosine similarity/correlation).
 
-Trained multiple models:
+Model-Based (Optional): Applied matrix factorization (SVD) for predicting unknown ratings.
 
-Logistic Regression
+5. Evaluation
 
-Decision Tree Classifier
+Compared predicted recommendations against real user preferences.
 
-Random Forest
-
-Support Vector Machine (SVM)
-
-Evaluated models using:
-
-Accuracy, Precision, Recall, F1-score, ROC-AUC
-
-5. Model Evaluation & Selection
-
-Compared model performances to select the best one
-
-Used confusion matrix to visualize predictions and misclassifications
+Used metrics such as RMSE or MAE to measure model performance.
 
 Key Insights
 
-High blood pressure and high cholesterol are the strongest predictors of heart disease
+Most movies receive ratings between 3 and 4, showing users tend to rate positively.
 
-Smoking and heavy alcohol consumption significantly increase risk
+Action, Drama, and Comedy emerged as the most common genres.
 
-Healthy diet (fruits and vegetables) reduces the likelihood of heart disease
+A small fraction of active users contributes a large share of ratings.
 
-Age and BMI positively correlate with heart disease risk
+The system shows a popularity bias, often recommending well-known titles.
 
-Education and income levels influence prevalence, reflecting lifestyle and awareness factors
-
-The final ML model achieved high recall, effectively identifying most at-risk individuals, which is crucial for medical use cases
+Collaborative filtering provides personalized movie suggestions based on user similarity.
