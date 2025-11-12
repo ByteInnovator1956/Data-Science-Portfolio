@@ -1,25 +1,10 @@
-Real Time disaster aggregation model 
+Real Time disaster aggregation model
+
+
 Overview
 
 This project is an end-to-end AI pipeline that collects, cleans, classifies, and visualizes real-world disaster-related data from multiple global sources. It provides a near real-time snapshot of disasters worldwide, helping authorities, NGOs, and analysts track trends and make informed decisions.
 
-Table of Contents
-
-Objective
-
-Data Collection Pipeline
-
-Data Cleaning & Enrichment
-
-AI-Based Disaster Classification
-
-Visualization (Tableau Dashboard)
-
-Data Flow Summary
-
-Final Outcome
-
-Impact
 
 Objective
 
