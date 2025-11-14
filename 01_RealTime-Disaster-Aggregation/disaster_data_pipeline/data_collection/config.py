@@ -1,16 +1,13 @@
-# config.py
-# Add your API keys here
-REDDIT_CLIENT_ID = "PRt7mgSx40nH_d-F1cmLZQ"
-REDDIT_CLIENT_SECRET = "eXENFxyN6LZp1W2ciUU9rGj89BIGlw"
+REDDIT_CLIENT_ID = "your_reddit_client_id"
+REDDIT_CLIENT_SECRET = "your_reddit_client_secret"
 REDDIT_USER_AGENT = "DisasterFetcher"
-NEWS_API_KEY = "f6166c7092794d62aaf7d7e1777030b2"
 
-# For future Twitter integration
-TWITTER_API_KEY = "duyFqkbTeRGp3ySJp7hCBHn9f"
-TWITTER_API_SECRET = "sUvk4ga40T4mzk0fn0sc81UoSWRjiFAciqWUdMO9hQpdY2L3xh"
-TWITTER_ACCESS_TOKEN = "1815072179798622209-NoqvIsAK6Ib56su13LKbP37rHqmeIB"
-TWITTER_ACCESS_SECRET = "jSIfrTMzhcXm7TAKq5jycv0E6tVtmia3h24kyX2VPUEEQ"
-TWITTER_BEARER_TOKEN = "AAAAAAAAAAAAAAAAAAAAAGTZxAEAAAAAhtk0V8m7Mk2jYjwoOQlAse1ziAs%3DAokeEyPzdSnJfthaKHJfhFssd3jUZ77UkXqkDCceLYcHzAcZUV"
+NEWS_API_KEY = "your_news_api_key"
 
-# Path to save raw data
+TWITTER_API_KEY = "your_twitter_api_key"
+TWITTER_API_SECRET = "your_twitter_api_secret"
+TWITTER_ACCESS_TOKEN = "your_twitter_access_token"
+TWITTER_ACCESS_SECRET = "your_twitter_access_secret"
+TWITTER_BEARER_TOKEN = "your_twitter_bearer_token"
+
 DATA_PATH = "raw_data.csv"
