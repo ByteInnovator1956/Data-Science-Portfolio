@@ -3,8 +3,6 @@ Overview
 The model.build/ folder is the processing & cleaning powerhouse of your pipeline.
 It doesn’t collect raw data like data_collection/ or store final results like data/. Instead, it prepares the data so the model can understand it and make accurate predictions.
 
-Think of it as the “kitchen”: raw ingredients (datasets) come in, they are chopped, cleaned, and prepped, and then passed to the “chef” (your ML model) to cook the final dish.
-
 Key Points
 
 Runs after raw data is collected: Depends on merged_data.csv from data/.
